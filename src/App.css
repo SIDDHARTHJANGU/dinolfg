@@ -1,38 +1,312 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none !important;
+  box-sizing: border-box;
+  text-decoration: none !important;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Custom_container {
+  max-width: 1305px !important;
+  padding-left: 12px !important;
+  padding-right: 12px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.min_vh_810 {
+  min-height: 810px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.ff_inter {
+  font-family: "Inter";
+}
+.fs_11 {
+  font-size: 11px;
+}
+.fs_15 {
+  font-size: 15px;
+}
+.fs_14 {
+  font-size: 14px;
+}
+.fs_18 {
+  font-size: 18px;
+}
+.fs_19 {
+  font-size: 19px;
+}
+.fs_20 {
+  font-size: 20px;
+}
+.fs_32 {
+  font-size: 32px;
+}
+.fs_36 {
+  font-size: 36px;
+}
+.fs_53 {
+  font-size: 53px;
+}
+.fs_56 {
+  font-size: 56px;
+}
+.fs_57 {
+  font-size: 57px;
+}
+.fs_60 {
+  font-size: 60px;
+}
+.fs_74 {
+  font-size: 74px;
+}
+.fs_76 {
+  font-size: 76px;
+}
+.fw_400 {
+  font-weight: 400;
+}
+.fw_500 {
+  font-weight: 500;
+}
+.fw_700 {
+  font-weight: 700;
+}
+.Bg_all {
+  background-color: #141619 !important;
+}
+p {
+  margin-top: 0;
+  margin-bottom: 0 !important;
+}
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0 !important;
+}
+dl,
+ol,
+ul {
+  margin-bottom: 0 !important;
+}
+ol,
+ul {
+  padding-left: 0 !important;
+}
+/* ------nav------------------ */
+.line_hight_160 {
+  line-height: 160% !important;
+}
+.py_32 {
+  padding-top: 22.5px !important;
+  padding-bottom: 22.5px !important;
+}
+.gap_27 {
+  gap: 27px !important;
+}
+.z_20 {
+  z-index: 100px !important;
+}
+nav ul {
   display: flex;
-  flex-direction: column;
+  list-style: none;
   align-items: center;
+  flex-direction: row;
+  gap: 27px;
+}
+.navicon {
+  background-color: transparent;
+  border: none;
+  margin-top: 0;
+  margin-right: 0 !important;
+  z-index: 10 !important;
+}
+@media (max-width: 992px) {
+  nav ul {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background: transparent;
+    backdrop-filter: blur(52px) !important;
+    z-index: 10;
+    transition: all 500ms linear;
+    overflow: hidden;
+  }
+  nav ul.open {
+    display: flex;
+    right: 0;
+  }
+}
+/*----------------hero section------------------  */
+.balancing_linehight {
+  line-height: 113.158% !important;
+}
+.mt_28 {
+  margin-top: 28px;
+}
+.mt_31 {
+  margin-top: 31px;
+}
+.pera_clr {
+  color: #e5e5e5;
+  line-height: 166.667% !important;
+}
+.mt_41 {
+  margin-top: 41px;
+}
+.get_btn {
+  border: none;
+  padding: 15px 40px;
+  border-radius: 2px;
+  background: linear-gradient(135deg, #665dcd 0%, #5fa4e6 44.76%, #d2ab67 100%);
+}
+/* ----------------about--------------- */
+.about_linehight {
+  line-height: 139.286% !important;
+}
+.about_para_clr {
+  color: #e5e5e5;
+}
+.mt_24 {
+  margin-top: 24px;
+}
+.bilion_linhight {
+  line-height: 180.625% !important;
+}
+.pb_65 {
+  padding-bottom: 127px;
+}
+
+.bg_grident {
+  position: relative !important;
+  transition: all 500ms linear !important;
+  padding: 29px 24px;
+}
+.bg_grident::after {
+  content: "";
+  background: linear-gradient(
+    135deg,
+    #665dcd 0%,
+    #5fa4e6 44.76%,
+    #d2ab67 100%
+  ) !important;
+  height: 100%;
+  position: absolute !important;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+}
+.bg_grident:hover::after {
+  opacity: 1 !important;
+}
+.under_line {
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(135deg, #665dcd 0%, #5fa4e6 44.76%, #d2ab67 100%);
+}
+.pt_65 {
+  padding-top: 65px;
+}
+
+/* -------------------Crypto------------------ */
+.pt_129 {
+  padding-top: 129px;
+  padding-bottom: 60px;
+}
+.learn_btn {
+  background-color: transparent;
+  border: none;
+  margin-top: 32px;
+}
+.pt_122 {
+  padding-top: 122px;
+  padding-bottom: 55px;
+}
+.pt_55 {
+  padding-top: 55px;
+  padding-bottom: 30px;
+}
+.bitbank_bgclr {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-direction: column;
+  width: 192px;
+  height: 192px;
+  /* padding: 56px 56px 25px 56px; */
+  border-radius: 4px;
+  border: 1px solid rgba(65, 85, 114, 0.5);
+  background: linear-gradient(
+    180deg,
+    rgba(65, 85, 114, 0.15) 0%,
+    rgba(27, 27, 30, 0.1) 100%
+  );
 }
-
-.App-link {
-  color: #61dafb;
+.bitbank_clr {
+  color: #999999;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.gap_24 {
+  gap: 24px;
+}
+.mt_24 {
+  margin-top: 24px;
+}
+.bitbank {
+  height: 490px;
+  overflow-y: scroll;
+  border: none !important;
+}
+.bitbank::-webkit-scrollbar {
+  display: none;
+}
+/* }-----------------------company--------------- */
+.slider_arrow {
+  rotate: 180deg;
+}
+.gap_32 {
+  gap: 32px;
+  margin-top: 27px;
+}
+/* -----------------------join team------------------- */
+.pt_116 {
+  padding-top: 116px;
+  padding-bottom: 160px;
+}
+.ellips {
+  top: -50%;
+  left: -5%;
+}
+/* ---------------------contactus---------------------- */
+.pt_115 {
+  padding-top: 115px;
+  padding-bottom: 130px;
+}
+.ellipsone {
+  top: 20%;
+  left: 10%;
+}
+.ellipstwo {
+  width: 550px;
+  height: 550px;
+  top: -5%;
+  right: 13%;
+}
+/* ---------------footer---------------- */
+.about_clr{
+  color: #bcbcbc;
 }
